@@ -18,7 +18,7 @@ body {
 .bayan__title {
   text-align: center;
   font-size: 2rem;
-  line-height: 150%;
+  line-height: 125%;
   font-weight: 600;
 }
 
@@ -53,13 +53,7 @@ span {
   transition: all 0.5s ease;
 }
 
-.bayan:hover .bayan__btn {
-  display: block;
-}
 
-.bayan:hover .bayan__text {
-  color: black;
-}
 
 .bayan__item {
   position: relative;
@@ -72,19 +66,13 @@ span {
 .bayan__text {
   display: block;
   font-size: 1rem;
-  line-height: 150%;
+  line-height: 125%;
   font-weight: 500;
   color: blue;
   cursor: pointer;
 }
 
-label:hover .bayan__body {
-  max-height: 100vh;
-}
 
-label:hover .bayan__btn {
-  transform: rotate(180deg);
-}
 
 label:active {
   opacity: 0.8;
@@ -98,9 +86,53 @@ label:active {
   transition: all 0.3s ease;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 767px) {
   .bayan {
     width: 80vw;
+  }
+
+  .bayan__title {
+    font-size: 2.2rem;
+  }
+
+  .bayan__text {
+    font-size: 1.2rem;
+  }
+
+  .bayan:hover .bayan__btn {
+    display: block;
+  }
+  
+  .bayan:hover .bayan__text {
+    color: black;
+  }
+
+  label:hover .bayan__body {
+    max-height: 100vh;
+  }
+  
+  label:hover .bayan__btn {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 1023px) {
+  .bayan {
+    width: 60vw;
+  }
+
+  .bayan__title {
+    font-size: 2.8rem;
+  }
+
+  .bayan__text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1119px) {
+  .bayan {
+    width: 50vw;
   }
 
   .bayan__title {
@@ -108,35 +140,7 @@ label:active {
   }
 
   .bayan__text {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 820px) {
-  .bayan {
-    width: 60vw;
-  }
-
-  .bayan__title {
-    font-size: 3.5rem;
-  }
-
-  .bayan__text {
     font-size: 2rem;
-  }
-}
-
-@media (min-width: 1180px) {
-  .bayan {
-    width: 50vw;
-  }
-
-  .bayan__title {
-    font-size: 5rem;
-  }
-
-  .bayan__text {
-    font-size: 2.5rem;
   }
 }
 
