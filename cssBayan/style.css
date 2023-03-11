@@ -53,8 +53,6 @@ span {
   transition: all 0.5s ease;
 }
 
-
-
 .bayan__item {
   position: relative;
   width: 100%;
@@ -71,8 +69,6 @@ span {
   color: blue;
   cursor: pointer;
 }
-
-
 
 label:active {
   opacity: 0.8;
