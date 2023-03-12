@@ -12,10 +12,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 0.1rem solid black;
+}
+
+.bayan__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bayan:hover .bayan__btn {
+  display: block;
+}
+
+.bayan:hover .bayan__text {
+  color: black;
 }
 
 .bayan__title {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 2rem;
   line-height: 125%;
@@ -51,14 +66,17 @@ span {
   max-height: 0;
   cursor: pointer;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bayan__item {
   position: relative;
   width: 100%;
-  padding: 0.4rem 0.8rem;
+  padding: 0.3rem 0.7rem;
   box-sizing: border-box;
-  border: 0.2rem solid brown;
+  border: 0.1rem solid brown;
 }
 
 .bayan__text {
@@ -70,15 +88,20 @@ span {
   cursor: pointer;
 }
 
+label:hover .bayan__body {
+  max-height: 100vh;
+}
+
+label:hover .bayan__btn {
+  transform: rotate(180deg);
+}
+
 label:active {
   opacity: 0.8;
 }
 
 .bayan__btn {
   display: none;
-  position: absolute;
-  right: 0.8rem;
-  top: 1rem;
   transition: all 0.3s ease;
 }
 
@@ -94,22 +117,6 @@ label:active {
   .bayan__text {
     font-size: 1.2rem;
   }
-
-  .bayan:hover .bayan__btn {
-    display: block;
-  }
-  
-  .bayan:hover .bayan__text {
-    color: black;
-  }
-
-  label:hover .bayan__body {
-    max-height: 100vh;
-  }
-  
-  label:hover .bayan__btn {
-    transform: rotate(180deg);
-  }
 }
 
 @media (min-width: 1023px) {
@@ -118,11 +125,11 @@ label:active {
   }
 
   .bayan__title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .bayan__text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -132,11 +139,11 @@ label:active {
   }
 
   .bayan__title {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   .bayan__text {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
