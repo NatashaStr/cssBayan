@@ -1,3 +1,154 @@
-.bayan {
+* {
+  box-sizing: border-box;
+}
+
+body {
   background-color: bisque;
+}
+
+.bayan {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bayan__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bayan:hover .bayan__btn {
+  display: block;
+}
+
+.bayan:hover .bayan__text {
+  color: black;
+}
+
+.bayan__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 125%;
+  font-weight: 600;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+input:checked+span {
+  color: black;
+}
+
+input:checked~.bayan__body {
+  max-height: 100vh;
+}
+
+input:checked~.bayan__btn {
+  transform: rotate(180deg);
+}
+
+span {
+  display: block;
+}
+
+.bayan__body {
+  overflow: hidden;
+  max-height: 0;
+  cursor: pointer;
+  transition: all 1.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bayan__item {
+  position: relative;
+  width: 100%;
+  padding: 0.3rem 0.7rem;
+  box-sizing: border-box;
+  border: 0.1rem solid brown;
+}
+
+.bayan__text {
+  display: block;
+  font-size: 1rem;
+  line-height: 125%;
+  font-weight: 500;
+  color: blue;
+  cursor: pointer;
+}
+
+label:hover .bayan__body {
+  max-height: 100vh;
+}
+
+label:hover .bayan__btn {
+  transform: rotate(180deg);
+}
+
+label:active {
+  opacity: 0.8;
+}
+
+.bayan__btn {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 767px) {
+  .bayan {
+    width: 80vw;
+  }
+
+  .bayan__title {
+    font-size: 2.2rem;
+  }
+
+  .bayan__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  .bayan {
+    width: 60vw;
+  }
+
+  .bayan__title {
+    font-size: 2.4rem;
+  }
+
+  .bayan__text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1119px) {
+  .bayan {
+    width: 50vw;
+  }
+
+  .bayan__title {
+    font-size: 2.6rem;
+  }
+
+  .bayan__text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .bayan {
+    width: 40vw;
+  }
 }
